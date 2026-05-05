@@ -1,4 +1,5 @@
 📘 Sistema de Intenção de Matricula
+
 🧩 Contextualização do Problema
 
 Em instituições de ensino superior, o planejamento da oferta de disciplinas geralmente acontece com base em dados históricos ou estimativas pouco precisas. Esse modelo não reflete, com fidelidade, a real necessidade dos alunos em um determinado semestre.
@@ -12,7 +13,7 @@ Falta de previsibilidade para coordenadores e professores
 
 Diante disso, torna-se necessário um mecanismo que antecipe a demanda acadêmica de forma estruturada.
 
-🎯 Proposta da Solução
+🎯 Escopo
 
 O sistema proposto tem como objetivo coletar, organizar e analisar a intenção de matrícula dos alunos antes do período oficial.
 
@@ -104,3 +105,11 @@ Melhor organização das turmas
 Redução de conflitos por vagas
 Planejamento acadêmico mais eficiente
 Maior satisfação dos alunos
+
+Integrantes:
+
+242027498 - Mateus dos Santos de Queiroz 
+242027513 - Yasmim de Sousa Chagas
+241004659 - Carlos Eduardo F. Lima
+242012118 - Gabriel Valente Medeiros 
+222008806 - Ithalo Junio Medeiros de Oliveira Nóbrega
