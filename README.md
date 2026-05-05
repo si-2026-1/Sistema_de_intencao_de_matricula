@@ -1,4 +1,4 @@
-# Sistema de Intenção de matrícula
+# Sistema de Intenção de Matrícula
 
 ## Problema
 
