@@ -30,7 +30,7 @@ O sistema proposto terá como foco a coleta e análise da intenção de matrícu
 - Identidicação de disciplinas criticas
 - Filtros por curso e turno
 
-### Alunos
+### Visão Geral
 
 - Ranking de disciplinas mais procuradas
 - Indicadores de demanda
