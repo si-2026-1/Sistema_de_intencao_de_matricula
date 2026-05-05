@@ -11,7 +11,7 @@ O sistema proposto terá como foco a coleta e análise da intenção de matrícu
 - Visando em diminuir a superlotação das turmas e com a baixa ofertas de outras turmas.
 - Buscamos evidenciar melhorias no planejamento academico.
 
-### Intenções de melhoria
+#### Intenções de melhoria
 
 </p>O projeto contribui ao propor uma abordagem baseada em dados para o planejamento acadêmico, permitindo que decisões deixem de ser reativas e passem a ser orientadas por informações antecipadas.
 
