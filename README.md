@@ -12,6 +12,13 @@ Visando em diminuir a superlotação das turmas e com a baixa ofertas de outras 
 
 Buscamos evidenciar melhorias no planejamento academico.
 
+## Funcionalidades
+
+- Login
+- Visualização de disciplinas
+- Seleção de disciplinas de interesse
+- Confirmação de pré matricula
+
 ### Integrantes:
 
 242027498 - Mateus dos Santos de Queiroz <br>
