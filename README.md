@@ -13,11 +13,19 @@ Visando em diminuir a superlotação das turmas e com a baixa ofertas de outras 
 Buscamos evidenciar melhorias no planejamento academico.
 
 ## Funcionalidades
+### Alunos
 
 - Login
 - Visualização de disciplinas
 - Seleção de disciplinas de interesse
 - Confirmação de pré matricula
+
+### Alunos
+
+- Visualização demanda por disciplina
+- Relatórios visuais
+- Identidicação de disciplinas criticas
+- Filtros por curso e turno
 
 ### Integrantes:
 
