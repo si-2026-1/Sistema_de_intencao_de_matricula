@@ -8,8 +8,17 @@ Como melhorar a forma de como os coordenadores planejam ofertas de disciplinas a
 
 O sistema proposto terá como foco a coleta e análise da intenção de matrícula, não substituindo sistemas institucionais existentes, mas atuando como ferramenta complementar.
 
+### Objetivos Especificos 
+
 - Visando em diminuir a superlotação das turmas e com a baixa ofertas de outras turmas.
 - Buscamos evidenciar melhorias no planejamento academico.
+
+### Publico Alvo
+
+- Coordenadores de curso
+- Professores
+- Alunos de graduação
+- Gestores acadêmicos
 
 #### Intenções de melhoria
 
