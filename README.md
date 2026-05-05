@@ -27,7 +27,13 @@ Buscamos evidenciar melhorias no planejamento academico.
 - Identidicação de disciplinas criticas
 - Filtros por curso e turno
 
-### Integrantes:
+### Alunos
+
+- Ranking de disciplinas mais procuradas
+- Indicadores de demanda
+- Gráficos
+
+#### Integrantes:
 
 242027498 - Mateus dos Santos de Queiroz <br>
 242027513 - Yasmim de Sousa Chagas<br>
