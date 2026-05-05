@@ -122,9 +122,7 @@ O projeto pode ser validado por meio de:
 
 🚀 Como visualizar o projeto
 
-1.⁠ ⁠Acesse o protótipo no Figma (link na pasta "/prototipo")
-2.⁠ ⁠Consulte a modelagem na pasta "/modelagem"
-3.⁠ ⁠Analise os requisitos na pasta "/requisitos"
+Ainda será disponibilizado 
 
 ---
 
