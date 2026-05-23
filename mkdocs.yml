@@ -1,0 +1,8 @@
+site_name: Sistema de Intenção de Matrícula
+
+theme:
+  name: material
+  language: pt-BR
+
+nav:
+  - Início: index.md
