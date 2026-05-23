@@ -4,5 +4,9 @@ theme:
   name: material
   language: pt-BR
 
+plugins:
+  - search
+  - include-markdown
+
 nav:
   - Início: index.md
