@@ -19,7 +19,7 @@ O sistema não deve perder dados armazenados offline durante a sincronização.
 
 ---
 
-# Inteligência e Validação
+## Inteligência e Validação
 
 ### RNF06
 O sistema deve atualizar informações em tempo real com atraso máximo de 2 segundos.
