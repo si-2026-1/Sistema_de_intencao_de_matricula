@@ -11,8 +11,8 @@ nav:
   - Início: index.md
 
   - Requisitos:
-      - Requisitos Funcionais: Requisitos/Requisitos_Funcionais.md
+      - Requisitos Funcionais: Requisitos/Requisitos_funcionais.md
       - Requisitos Não Funcionais: Requisitos/Requisitos_nao_funcionais.md
 
   - Épicos e Histórias:
-      - Captação de Interesse Aluno: epicos_e_historias_de_usuarios/captacao_de_interesse_alunos.md
+      - Captação de Interesse Aluno: epicos_e_historias_de_usuarios/Captacao_de_interesse_alunos.md
