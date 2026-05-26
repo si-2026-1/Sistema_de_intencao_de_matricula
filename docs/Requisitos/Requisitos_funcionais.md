@@ -31,7 +31,7 @@ O sistema deve armazenar as escolhas realizadas pelo aluno.
 
 ---
 
-# Inteligência e Validação
+## Inteligência e Validação
 
 ### RF10
 O sistema deve permitir filtrar disciplinas por curso.
