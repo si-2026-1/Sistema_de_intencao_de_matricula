@@ -6,7 +6,6 @@ theme:
 
 plugins:
   - search
-  - include-markdown
 
 nav:
   - Início: index.md
@@ -16,4 +15,4 @@ nav:
       - Requisitos Não Funcionais: Requisitos/Requisitos_nao_funcionais.md
 
   - Épicos e Histórias:
-      - Captação de Interesse Aluno: epicos_e_historias_de_usuarios/captação_de_interesse_alunos.md
+      - Captação de Interesse Aluno: epicos_e_historias_de_usuarios/captacao_de_interesse_alunos.md
