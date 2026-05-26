@@ -91,3 +91,20 @@ O sistema deve atualizar automaticamente relatórios e métricas.
 
 ### RF27
 O sistema deve impedir duplicidade de registros.
+
+## Análise e Monitoramento
+
+### RF28
+O sistema deve permitir visualizar disciplinas disponíveis.
+
+### RF29
+O sistema deve gerar rankings das disciplinas mais procuradas.
+
+### RF30
+O sistema deve exibir gráficos estatísticos relacionados às pré-matrículas.
+
+### RF31
+O sistema deve permitir filtrar relatórios por curso e semestre.
+
+### RF32
+O sistema deve atualizar métricas automaticamente após novas pré-matrículas.
