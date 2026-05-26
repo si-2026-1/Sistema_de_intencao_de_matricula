@@ -1,40 +1,64 @@
 # Requisitos Não Funcionais
 
-## Captação de Interesse - Aluno
+## Acesso e Perfil
 
 ### RNF01
-O sistema deve garantir um tempo de resposta inferior a 2 segundos nas navegações.
+O sistema deve armazenar as senhas com hash SHA-256
 
 ### RNF02
-O sistema deve funcionar sem conexão com a internet no modo offline.
+O sistema terá uma sessão que expira após 30 min de inatividade
 
 ### RNF03
-O sistema deve possuir interface responsiva para diferentes tamanhos de tela.
+O sistema deve ter uma comunicação via HTTPS/TLS
 
 ### RNF04
-O sistema deve garantir uma navegação intuitiva para o usuário.
+O tempo de resposta do sistema deve ser menor, ou igual a 2 segundos
 
 ### RNF05
+O sistema deve conter log de auditoria de acessos e alterações
+
+### RNF06
+O sistema deve estar em conformidade com LGPD 
+
+### RNF07
+O sistema deve ter uma interface responsiva
+
+
+## Captação de Interesse - Aluno
+
+### RNF08
+O sistema deve garantir um tempo de resposta inferior a 2 segundos nas navegações.
+
+### RNF09
+O sistema deve funcionar sem conexão com a internet no modo offline.
+
+### RNF10
+O sistema deve possuir interface responsiva para diferentes tamanhos de tela.
+
+### RNF11
+O sistema deve garantir uma navegação intuitiva para o usuário.
+
+### RNF12
 O sistema não deve perder dados armazenados offline durante a sincronização.
 
 ---
 
 ## Inteligência e Validação
 
-### RNF06
+### RNF13
 O sistema deve atualizar informações em tempo real com atraso máximo de 2 segundos.
 
-### RNF07
+### RNF14
 O sistema deve manter a integridade dos dados durante atualizações simultâneas.
 
-### RNF08
+### RNF15
 O sistema deve possuir interface intuitiva para aplicação dos filtros.
 
-### RNF09
+### RNF16
 O sistema deve apresentar mensagens claras sobre o prazo de encerramento da coleta.
 
-### RNF10
+### RNF17
 O sistema deve garantir disponibilidade contínua durante o período de coleta.
 
-### RNF11
+### RNF18
 O sistema deve registrar alterações sem perda de dados durante sincronizações em tempo real.

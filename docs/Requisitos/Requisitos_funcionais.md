@@ -2,65 +2,92 @@
 
 ---
 
-## Captação de Interesse - Aluno
+## Acesso e Perfil
 
 ### RF01
-O sistema deve permitir visualizar disciplinas disponíveis.
+O sistema deve conter login com e-mail e senha
 
 ### RF02
-O sistema deve permitir buscar disciplinas por nome ou código.
+O sistema deve conter cadastro com nome, curso e área de interesse
 
 ### RF03
-O sistema deve permitir selecionar disciplinas de interesse.
+O sistema deve conter autenticação de dois fatores (2FA)
 
 ### RF04
-O sistema deve permitir escolher turmas dentre as disponíveis.
+O sistema deve conter recuperação de senha por e-mail
 
 ### RF05
-O sistema deve permitir remover disciplinas selecionadas.
+O sistema deve conter diferenciação de perfil (Aluno/Prof./Coord.)
 
 ### RF06
-O sistema deve funcionar no modo offline.
+O sistema deve permitir edição de dados do perfil
 
 ### RF07
-O sistema deve sincronizar os dados ao restabelecer conexão com a internet.
+O sistema deve permitir Gerenciamento de papéis pelo coordenador
 
 ### RF08
-O sistema deve permitir confirmar a pré-matrícula.
+O sistema deve ter um rate limite por tentativas de login inválidos
+
+
+## Captação de Interesse - Aluno
 
 ### RF09
+O sistema deve permitir visualizar disciplinas disponíveis.
+
+### RF10
+O sistema deve permitir buscar disciplinas por nome ou código.
+
+### RF11
+O sistema deve permitir selecionar disciplinas de interesse.
+
+### RF12
+O sistema deve permitir escolher turmas dentre as disponíveis.
+
+### RF13
+O sistema deve permitir remover disciplinas selecionadas.
+
+### RF14
+O sistema deve funcionar no modo offline.
+
+### RF15
+O sistema deve sincronizar os dados ao restabelecer conexão com a internet.
+
+### RF16
+O sistema deve permitir confirmar a pré-matrícula.
+
+### RF17
 O sistema deve armazenar as escolhas realizadas pelo aluno.
 
 ---
 
 ## Inteligência e Validação
 
-### RF10
+### RF18
 O sistema deve permitir filtrar disciplinas por curso.
 
-### RF11
+### RF19
 O sistema deve permitir filtrar disciplinas por turno.
 
-### RF12
+### RF20
 O sistema deve permitir alterar disciplinas selecionadas.
 
-### RF13
+### RF21
 O sistema deve permitir remover disciplinas da pré-matrícula.
 
-### RF14
+### RF22
 O sistema deve permitir registrar justificativa na funcionalidade “Perdi o Interesse”.
 
-### RF15
+### RF23
 O sistema deve limitar o período de coleta para 10 dias.
 
-### RF16
+### RF24
 O sistema deve bloquear alterações após o encerramento do período.
 
-### RF17
+### RF25
 O sistema deve atualizar os dados em tempo real.
 
-### RF18
+### RF26
 O sistema deve atualizar automaticamente relatórios e métricas.
 
-### RF19
+### RF27
 O sistema deve impedir duplicidade de registros.
