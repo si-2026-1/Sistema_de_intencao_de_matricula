@@ -6,6 +6,7 @@ theme:
 
 plugins:
   - search
+  - include-markdown
 
 nav:
   - Início: index.md
