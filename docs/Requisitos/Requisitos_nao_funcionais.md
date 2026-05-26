@@ -1,6 +1,8 @@
-# Captação de Interesse - Aluno
+# Requisitos não Funcionais
 
-## Requisitos Não Funcionais
+---
+
+## Captação de Interesse - Aluno
 
 ### RNF01
 O sistema deve garantir um tempo de resposta inferior a 2 segundos nas navegações.
