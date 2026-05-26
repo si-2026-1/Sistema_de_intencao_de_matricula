@@ -62,3 +62,17 @@ O sistema deve garantir disponibilidade contínua durante o período de coleta.
 
 ### RNF18
 O sistema deve registrar alterações sem perda de dados durante sincronizações em tempo real.
+
+## Análise e Monitoramento
+
+### RNF19
+O sistema deve garantir tempo de resposta inferior a 2 segundos nas navegações.
+
+### RNF20
+O sistema deve possuir interface responsiva para visualização dos gráficos.
+
+### RNF21
+O sistema deve garantir consistência entre relatórios e dados armazenados.
+
+### RNF22
+O sistema deve apresentar informações de forma clara e intuitiva.
