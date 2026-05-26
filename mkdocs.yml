@@ -11,7 +11,7 @@ plugins:
 nav:
   - Início: index.md
 
-    - Requisitos:
+  - Requisitos:
       - Requisitos Funcionais: Requisitos/Requisitos_Funcionais.md
       - Requisitos Não Funcionais: Requisitos/Requisitos_nao_funcionais.md
 
