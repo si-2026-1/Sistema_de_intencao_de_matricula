@@ -1,6 +1,4 @@
-# Requisitos não Funcionais
-
----
+# Requisitos Não Funcionais
 
 ## Captação de Interesse - Aluno
 
