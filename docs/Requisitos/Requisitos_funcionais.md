@@ -1,6 +1,6 @@
-# Requisitos Funcionais
+# Captação de Interesse - Aluno
 
-## Captação de Interesse - Aluno
+## Requisitos Funcionais
 
 ### RF01
 O sistema deve permitir visualizar disciplinas disponíveis.
