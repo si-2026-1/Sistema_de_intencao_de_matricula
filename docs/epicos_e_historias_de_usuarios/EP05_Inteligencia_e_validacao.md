@@ -5,8 +5,6 @@ Como aluno, quero filtrar disciplinas e alterar meus interesses durante o perío
 
 ---
 
-# Histórias de Usuário
-
 ## HU01 - Filtrar disciplinas
 
 ### Descrição
