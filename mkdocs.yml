@@ -16,5 +16,8 @@ nav:
       - Requisitos Não Funcionais: Requisitos/Requisitos_nao_funcionais.md
 
   - Épicos e Histórias:
+      - Autenticação e Acesso ao Sistema: epicos_e_historias_de_usuarios/EP01_Autenticação_e_Acesso.md
+      - Cadastro e Gestão de Perfil: epicos_e_historias_de_usuarios/EP02_Cadastro_e_Gestão.md
+      - Diferenciação de Papéis: epicos_e_historias_de_usuarios/EP03_Diferenciação_de_Papéis.md
       - Captação de Interesse Aluno: epicos_e_historias_de_usuarios/EP04_Captacao_de_interesse_alunos.md
       - Inteligência de validação: epicos_e_historias_de_usuarios/EP05_Inteligencia_e_validacao.md
