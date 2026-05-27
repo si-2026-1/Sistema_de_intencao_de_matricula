@@ -24,5 +24,7 @@ nav:
 
   - Histórico:
       - Divisão de Tarefas da Equipe: Historico/historico.md
+      
   - Modelos:
       - Modelo Conceitual: Modelos/modelo_conceitual.md
+      - Modelo Físico: Modelos/modelo_fisico.md
