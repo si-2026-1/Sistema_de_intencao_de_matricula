@@ -4,7 +4,7 @@ Como aluno, quero selecionar minhas disciplinas de interesse para que a coordena
 
 ---
 
-# Histórias de Usuário
+## Histórias de Usuário
 
 ## HU01 - Visualizar disciplinas
 
