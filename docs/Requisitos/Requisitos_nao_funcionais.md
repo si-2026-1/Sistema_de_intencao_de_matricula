@@ -65,14 +65,39 @@ O sistema deve registrar alterações sem perda de dados durante sincronizaçõe
 
 ## Análise e Monitoramento
 
+
 ### RNF19
-O sistema deve garantir tempo de resposta inferior a 2 segundos nas navegações.
+O sistema deve permitir acesso ao módulo apenas para usuários com perfil de coordenador ou gestor.
 
 ### RNF20
-O sistema deve possuir interface responsiva para visualização dos gráficos.
+O sistema deve carregar os indicadores de demanda em até 3 segundos.
 
 ### RNF21
-O sistema deve garantir consistência entre relatórios e dados armazenados.
+O sistema deve estar disponível durante o período de pré-matrícula.
 
 ### RNF22
+O sistema não deve permitir exclusão de turmas que possuam alunos vinculados.
+
+### RNF23
+Os alertas de superlotação devem ser exibidos de forma visual e facilmente identificável.
+
+### RNF24
+As alterações realizadas nas turmas devem ser registradas em log.
+
+### RNF25
+Os dados exibidos no módulo devem refletir as informações atualizadas do sistema acadêmico.
+
+
+## Métricas e Relatórios Visuais
+
+### RNF26
+O sistema deve garantir tempo de resposta inferior a 2 segundos nas navegações.
+
+### RNF27
+O sistema deve possuir interface responsiva para visualização dos gráficos.
+
+### RNF28
+O sistema deve garantir consistência entre relatórios e dados armazenados.
+
+### RNF29
 O sistema deve apresentar informações de forma clara e intuitiva.
