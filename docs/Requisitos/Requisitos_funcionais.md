@@ -95,16 +95,51 @@ O sistema deve impedir duplicidade de registros.
 ## Análise e Monitoramento
 
 ### RF28
-O sistema deve permitir visualizar disciplinas disponíveis.
+O sistema deve permitir que o coordenador visualize a quantidade de alunos que solicitaram vaga em cada turma.
 
 ### RF29
-O sistema deve gerar rankings das disciplinas mais procuradas.
+O sistema deve exibir nome, código e identificação da turma.
 
 ### RF30
-O sistema deve exibir gráficos estatísticos relacionados às pré-matrículas.
+O sistema deve comparar a quantidade de solicitações com o número de vagas disponíveis da turma.
 
 ### RF31
-O sistema deve permitir filtrar relatórios por curso e semestre.
+O sistema deve emitir alertas quando a demanda ultrapassar o número de vagas.
 
 ### RF32
+O sistema deve apresentar indicadores relacionados ao perfil da demanda dos alunos.
+
+### RF33
+O sistema deve apresentar o percentual de disciplinas concluídas pelos alunos.
+
+### RF34
+O sistema deve diferenciar alunos de acordo com a quantidade de reprovações.
+
+### RF35
+O sistema deve apresentar indicadores de demanda por turno.
+
+### RF36
+O sistema deve permitir que coordenadores criem novas turmas.
+
+### RF37
+O sistema deve permitir alterar informações da turma, como nome, código e horário.
+
+### RF38
+O sistema deve permitir excluir turmas sem alunos vinculados.
+
+## Métricas e Relatórios Visuais
+
+### RF39
+O sistema deve permitir visualizar disciplinas disponíveis.
+
+### RF40
+O sistema deve gerar rankings das disciplinas mais procuradas.
+
+### RF41
+O sistema deve exibir gráficos estatísticos relacionados às pré-matrículas.
+
+### RF42
+O sistema deve permitir filtrar relatórios por curso e semestre.
+
+### RF43
 O sistema deve atualizar métricas automaticamente após novas pré-matrículas.
