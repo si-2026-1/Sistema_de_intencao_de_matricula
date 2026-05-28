@@ -25,6 +25,13 @@ O sistema proposto terá como foco a coleta e análise da intenção de matrícu
 </p>O projeto contribui ao propor uma abordagem baseada em dados para o planejamento acadêmico, permitindo que decisões deixem de ser reativas e passem a ser orientadas por informações antecipadas.
 
 ## Funcionalidades
+### Alunos
+
+- Login
+- Visualização de disciplinas
+- Seleção de disciplinas de interesse
+- Confirmação de pré matricula
+- 
 ### Professor
 
 - Visualização das turmas vinculadas
