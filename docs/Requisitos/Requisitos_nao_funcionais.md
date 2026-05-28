@@ -101,3 +101,19 @@ O sistema deve garantir consistência entre relatórios e dados armazenados.
 
 ### RNF29
 O sistema deve apresentar informações de forma clara e intuitiva.
+
+
+## Acompanhamento de Turmas e Demanda Acadêmica
+
+### RNF30
+
+O sistema deve permitir acesso ao módulo apenas para usuários com perfil de professor.
+
+### RNF31
+
+O sistema deve possuir interface responsiva para diferentes dispositivos.
+
+### RNF32
+
+O sistema deve apresentar informações de forma clara e organizada ao professor.
+
