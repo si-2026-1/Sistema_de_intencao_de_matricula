@@ -76,3 +76,17 @@
 - HU01 — Visualizar ranking de disciplinas mais procuradas
 - HU02 — Visualizar gráficos de demanda por curso
 - HU03 — Filtrar relatórios por semestre
+
+---
+
+## Módulo 6 — Acompanhamento de Turmas e Demanda Acadêmica
+
+### Épicos
+
+* EP01 — Acompanhamento de Turmas e Demanda Acadêmica
+
+### Histórias de Usuário
+
+* HU01 — Visualizar turmas vinculadas
+* HU02 — Visualizar demanda das turmas
+* HU03 — Visualizar indicadores acadêmicos da turma
