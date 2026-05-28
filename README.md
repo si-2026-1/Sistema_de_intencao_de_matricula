@@ -45,6 +45,52 @@ O sistema proposto terá como foco a coleta e análise da intenção de matrícu
 - Indicadores de demanda
 - Gráficos
 
+---
+
+## 📁 Estrutura do Projeto
+
+```text
+Sistema_de_intencao_de_matricula/
+├── .github/
+│   └── workflows/
+│       └── deploy.yml
+│
+├── docs/
+│   ├── Historico/
+│   │   └── historico.md
+│   │
+│   ├── Images/
+│   │   ├── Conceptual model - BRMW.pdf
+│   │   └── Modelo_Conceitual.png
+│   │
+│   ├── Modelos/
+│   │   ├── modelo_conceitual.md
+│   │   └── modelo_fisico.md
+│   │
+│   ├── Requisitos/
+│   │   ├── Requisitos_funcionais.md
+│   │   └── Requisitos_nao_funcionais.md
+│   │
+│   ├── epicos_e_historias_de_usuarios/
+│   │   ├── EP01_Autenticacao_e_Acesso.md
+│   │   ├── EP02_Cadastro_e_Gestao.md
+│   │   ├── EP03_Diferenciacao_de_Papeis.md
+│   │   ├── EP04_Captacao_de_interesse.md
+│   │   ├── EP05_Inteligencia_e_validacao.md
+│   │   ├── EP06_Planejamento_e_Coordenacao.md
+│   │   └── EP07_Analise_e_Monitoramento.md
+│   │
+│   ├── sql/
+│   │   └── modelo_fisico.sql
+│   │
+│   └── index.md
+│
+└── README.md
+```
+
+---
+
+
 #### Integrantes:
 
 242027498 - Mateus dos Santos de Queiroz <br>
