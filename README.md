@@ -31,7 +31,7 @@ O sistema proposto terá como foco a coleta e análise da intenção de matrícu
 - Visualização de disciplinas
 - Seleção de disciplinas de interesse
 - Confirmação de pré matricula
-- 
+  
 ### Professor
 
 - Visualização das turmas vinculadas
