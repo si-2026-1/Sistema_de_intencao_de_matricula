@@ -143,3 +143,28 @@ O sistema deve permitir filtrar relatórios por curso e semestre.
 
 ### RF43
 O sistema deve atualizar métricas automaticamente após novas pré-matrículas.
+
+---
+
+## Acompanhamento de Turmas e Demanda Acadêmica
+
+### RF42
+
+O sistema deve permitir ao professor visualizar suas turmas vinculadas.
+
+### RF43
+
+O sistema deve exibir nome, código, identificação, horário e turno das turmas.
+
+### RF44
+
+O sistema deve permitir ao professor visualizar a quantidade de alunos interessados por turma.
+
+### RF45
+
+O sistema deve apresentar indicadores acadêmicos relacionados às turmas ministradas.
+
+### RF46
+
+O sistema deve atualizar automaticamente as informações após novas intenções de matrícula.
+
