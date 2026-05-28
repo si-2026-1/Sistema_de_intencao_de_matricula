@@ -58,8 +58,6 @@ O sistema deve permitir confirmar a pré-matrícula.
 ### RF17
 O sistema deve armazenar as escolhas realizadas pelo aluno.
 
----
-
 ## Inteligência e Validação
 
 ### RF18
@@ -143,8 +141,6 @@ O sistema deve permitir filtrar relatórios por curso e semestre.
 
 ### RF43
 O sistema deve atualizar métricas automaticamente após novas pré-matrículas.
-
----
 
 ## Acompanhamento de Turmas e Demanda Acadêmica
 
