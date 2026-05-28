@@ -41,7 +41,6 @@ O sistema deve garantir uma navegação intuitiva para o usuário.
 ### RNF12
 O sistema não deve perder dados armazenados offline durante a sincronização.
 
----
 
 ## Inteligência e Validação
 
