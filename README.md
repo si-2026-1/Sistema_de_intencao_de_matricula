@@ -47,7 +47,7 @@ O sistema proposto terá como foco a coleta e análise da intenção de matrícu
 
 ---
 
-## 📁 Estrutura do Projeto
+## Estrutura do Projeto
 
 ```text
 Sistema_de_intencao_de_matricula/
