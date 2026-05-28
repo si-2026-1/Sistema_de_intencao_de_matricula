@@ -30,86 +30,83 @@ O sistema deve ter uma interface responsiva
 O sistema deve garantir um tempo de resposta inferior a 2 segundos nas navegações.
 
 ### RNF09
-O sistema deve funcionar sem conexão com a internet no modo offline.
-
-### RNF10
 O sistema deve possuir interface responsiva para diferentes tamanhos de tela.
 
-### RNF11
+### RNF10
 O sistema deve garantir uma navegação intuitiva para o usuário.
 
 
 ## Inteligência e Validação
 
-### RNF12
+### RNF11
 O sistema deve atualizar informações em tempo real com atraso máximo de 2 segundos.
 
-### RNF13
+### RNF12
 O sistema deve manter a integridade dos dados durante atualizações simultâneas.
 
-### RNF14
+### RNF13
 O sistema deve possuir interface intuitiva para aplicação dos filtros.
 
-### RNF15
+### RNF14
 O sistema deve apresentar mensagens claras sobre o prazo de encerramento da coleta.
 
-### RNF16
+### RNF15
 O sistema deve garantir disponibilidade contínua durante o período de coleta.
 
-### RNF17
+### RNF16
 O sistema deve registrar alterações sem perda de dados durante sincronizações em tempo real.
 
 
 ## Análise e Monitoramento
 
-### RNF18
+### RNF17
 O sistema deve permitir acesso ao módulo apenas para usuários com perfil de coordenador ou gestor.
 
-### RNF19
+### RNF18
 O sistema deve carregar os indicadores de demanda em até 3 segundos.
 
-### RNF20
+### RNF19
 O sistema deve estar disponível durante o período de pré-matrícula.
 
-### RNF21
+### RNF20
 O sistema não deve permitir exclusão de turmas que possuam alunos vinculados.
 
-### RNF22
+### RNF21
 Os alertas de superlotação devem ser exibidos de forma visual e facilmente identificável.
 
-### RNF23
+### RNF22
 As alterações realizadas nas turmas devem ser registradas em log.
 
-### RNF24
+### RNF23
 Os dados exibidos no módulo devem refletir as informações atualizadas do sistema acadêmico.
 
 
 ## Métricas e Relatórios Visuais
 
-### RNF25
+### RNF24
 O sistema deve garantir tempo de resposta inferior a 2 segundos nas navegações.
 
-### RNF26
+### RNF25
 O sistema deve possuir interface responsiva para visualização dos gráficos.
 
-### RNF27
+### RNF26
 O sistema deve garantir consistência entre relatórios e dados armazenados.
 
-### RNF28
+### RNF27
 O sistema deve apresentar informações de forma clara e intuitiva.
 
 
 ## Acompanhamento de Turmas e Demanda Acadêmica
 
-### RNF29
+### RNF28
 
 O sistema deve permitir acesso ao módulo apenas para usuários com perfil de professor.
 
-### RNF30
+### RNF29
 
 O sistema deve possuir interface responsiva para diferentes dispositivos.
 
-### RNF31
+### RNF30
 
 O sistema deve apresentar informações de forma clara e organizada ao professor.
 
