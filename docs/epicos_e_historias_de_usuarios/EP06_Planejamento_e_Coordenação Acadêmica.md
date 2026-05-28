@@ -1,7 +1,7 @@
 # EP06 - Planejamento e Coordenação Acadêmica
 
 ## Descrição do Épico
-Como coordenador, quero acompanhar a demanda das disciplinas e ajustar a oferta de turmas antes do período oficial de matrícula, para reduzir problemas de superlotação e inconsistências no planejamento acadêmico, além de melhorar o que for necessário.
+Como coordenador, quero acompanhar a demanda das disciplinas e ajustar a oferta de turmas antes do período oficial de matrícula, para reduzir problemas de superlotação e inconsistências no planejamento acadêmico.
 
 ---
 
