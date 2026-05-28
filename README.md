@@ -45,6 +45,13 @@ O sistema proposto terá como foco a coleta e análise da intenção de matrícu
 - Indicadores e relatórios acadêmicos
 - Gerenciamento da oferta de turmas
 
+### Gestor Acadêmico
+- Visualização de indicadores institucionais
+- Acompanhamento da demanda acadêmica
+- Consulta de relatórios estratégicos
+- Apoio à tomada de decisão acadêmica
+- Análise da oferta de disciplinas por semestre
+
 ### Visão Geral
 
 - Ranking de disciplinas mais procuradas
