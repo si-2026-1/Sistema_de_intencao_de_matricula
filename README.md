@@ -65,7 +65,7 @@ Sistema_de_intencao_de_matricula/
 │   ├── Historico/
 │   │   └── historico.md
 │   │
-│   ├── Images/
+│   ├── Imagens/
 │   │   ├── Conceptual model - BRMW.pdf
 │   │   └── Modelo_Conceitual.png
 │   │
@@ -77,21 +77,27 @@ Sistema_de_intencao_de_matricula/
 │   │   ├── Requisitos_funcionais.md
 │   │   └── Requisitos_nao_funcionais.md
 │   │
+│   ├── Slides/
+│   │   └── slides.md
+│   │
 │   ├── epicos_e_historias_de_usuarios/
-│   │   ├── EP01_Autenticacao_e_Acesso.md
-│   │   ├── EP02_Cadastro_e_Gestao.md
-│   │   ├── EP03_Diferenciacao_de_Papeis.md
-│   │   ├── EP04_Captacao_de_interesse.md
+│   │   ├── EP01_Autenticação_e_Acesso.md
+│   │   ├── EP02_Cadastro_e_Gestão.md
+│   │   ├── EP03_Diferenciação_de_Papéis.md
+│   │   ├── EP04_Captacao_de_interesse_alunos.md
 │   │   ├── EP05_Inteligencia_e_validacao.md
-│   │   ├── EP06_Planejamento_e_Coordenacao.md
-│   │   └── EP07_Analise_e_Monitoramento.md
+│   │   ├── EP06_Planejamento_e_Coordenação_Acadêmica.md
+│   │   ├── EP07_Analise_e_Monitoramento_das_Pre-Matriculas.md
+│   │   └── EP08_Acompanhamento_de_Turmas_e_Demanda_Academica.md
 │   │
 │   ├── sql/
 │   │   └── modelo_fisico.sql
 │   │
 │   └── index.md
 │
-└── README.md
+├── README.md
+│
+└── mkdocs.yml
 ```
 
 ---
