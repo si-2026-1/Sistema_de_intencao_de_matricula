@@ -55,20 +55,8 @@ Como aluno, quero escolher a turma desejada dentre as disponíveis para definir 
 
 ---
 
-## HU05 - Utilizar sistema offline
 
-### Descrição
-Como aluno, quero utilizar o sistema offline para continuar minhas seleções sem acesso à internet.
-
-### Critérios de Aceitação
-- O sistema deve funcionar sem conexão com internet;
-- O sistema deve armazenar temporariamente os dados;
-- O sistema deve sincronizar os dados ao retornar conexão;
-- O sistema deve informar o status da conexão ao usuário.
-
----
-
-## HU06 - Confirmar pré-matrícula
+## HU05 - Confirmar pré-matrícula
 
 ### Descrição
 Como aluno, quero confirmar minhas disciplinas selecionadas para registrar minha intenção de matrícula.
