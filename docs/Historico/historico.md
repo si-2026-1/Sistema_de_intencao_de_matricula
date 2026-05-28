@@ -3,8 +3,8 @@
 | Integrante | Responsabilidade | Atividades Desenvolvidas |
 |---|---|---|
 | Ithalo Junio M. de O. Nóbrega | Módulo de Acesso e Perfil, Modelos | Responsável pelo desenvolvimento do Módulo 1, modelagem funcional e modelagem conceitual do sistema. |
-| Mateus dos Santos de Queiroz | Módulo de Inteligência e Validação | Responsável pelo desenvolvimento do Módulo 3, incluindo filtros, validações e atualização em tempo real. |
-| Yasmim de Sousa Chagas | Módulo de Captação de Interesse | Responsável pelo desenvolvimento do Módulo 2, incluindo funcionalidades de pré-matrícula. |
+| Mateus dos Santos de Queiroz | Módulo de Inteligência e Validação | Responsável pelo desenvolvimento do Módulo 3, incluindo filtros, validações e atualização em tempo real, além da edição dos slides da apresentação do projeto. |
+| Yasmim de Sousa Chagas | Módulo de Captação de Interesse | Responsável pelo desenvolvimento do Módulo 2, incluindo funcionalidades de pré-matrícula, além da criação e edição dos slides da apresentação do projeto. |
 | Carlos Eduardo F. Lima | Módulo de Métricas e Relatórios | Responsável pelo desenvolvimento do Módulo 5, incluindo gráficos, rankings e relatórios acadêmicos. |
 | Gabriel Valente Medeiros | Módulo de Planejamento e Coordenação Acadêmica | Responsável pelo desenvolvimento do Módulo 4, incluindo análise de demanda e gerenciamento de turmas. |
 
