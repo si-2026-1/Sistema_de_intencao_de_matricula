@@ -1,0 +1,2338 @@
+
+<!doctype html>
+<html lang="pt" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../..">
+      
+      
+        <link rel="next" href="../Requisitos_nao_funcionais/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
+    
+    
+      
+        <title>Requisitos Funcionais - Sistema de Intenção de Matrícula</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.484c7ddc.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#requisitos-funcionais" class="md-skip">
+          Pular para conteúdo
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Cabeçalho">
+    <a href="../.." title="Sistema de Intenção de Matrícula" class="md-header__button md-logo" aria-label="Sistema de Intenção de Matrícula" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Sistema de Intenção de Matrícula
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Requisitos Funcionais
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Buscar" placeholder="Buscar" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Pesquisar">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Limpar" aria-label="Limpar" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Inicializando busca
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navegação" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Sistema de Intenção de Matrícula" class="md-nav__button md-logo" aria-label="Sistema de Intenção de Matrícula" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Sistema de Intenção de Matrícula
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Início
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Requisitos
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Requisitos
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Requisitos Funcionais
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Requisitos Funcionais
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Índice">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Índice
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#acesso-e-perfil" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Acesso e Perfil
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Acesso e Perfil">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#rf01" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        RF01
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rf02" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        RF02
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rf03" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        RF03
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rf04" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        RF04
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rf05" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        RF05
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rf06" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        RF06
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rf07" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        RF07
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rf08" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        RF08
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#captacao-de-interesse-aluno" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Captação de Interesse - Aluno
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Captação de Interesse - Aluno">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#rf09" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        RF09
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rf10" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        RF10
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rf11" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        RF11
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rf12" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        RF12
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rf13" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        RF13
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rf14" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        RF14
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rf15" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        RF15
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rf16" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        RF16
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rf17" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        RF17
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#inteligencia-e-validacao" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Inteligência e Validação
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Inteligência e Validação">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#rf18" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        RF18
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rf19" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        RF19
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rf20" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        RF20
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rf21" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        RF21
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rf22" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        RF22
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rf23" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        RF23
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rf24" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        RF24
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rf25" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        RF25
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rf26" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        RF26
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rf27" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        RF27
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#analise-e-monitoramento" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Análise e Monitoramento
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Análise e Monitoramento">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#rf28" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        RF28
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rf29" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        RF29
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rf30" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        RF30
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rf31" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        RF31
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rf32" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        RF32
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rf33" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        RF33
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rf34" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        RF34
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rf35" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        RF35
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rf36" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        RF36
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rf37" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        RF37
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rf38" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        RF38
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#metricas-e-relatorios-visuais" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Métricas e Relatórios Visuais
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Métricas e Relatórios Visuais">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#rf39" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        RF39
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rf40" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        RF40
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rf41" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        RF41
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rf42" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        RF42
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rf43" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        RF43
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#acompanhamento-de-turmas-e-demanda-academica" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Acompanhamento de Turmas e Demanda Acadêmica
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Acompanhamento de Turmas e Demanda Acadêmica">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#rf44" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        RF44
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rf45" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        RF45
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rf46" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        RF46
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rf47" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        RF47
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rf48" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        RF48
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Requisitos_nao_funcionais/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Requisitos Não Funcionais
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Épicos e Histórias
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Épicos e Histórias
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../epicos_e_historias_de_usuarios/EP01_Autentica%C3%A7%C3%A3o_e_Acesso/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Autenticação e Acesso ao Sistema
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../epicos_e_historias_de_usuarios/EP02_Cadastro_e_Gest%C3%A3o/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Cadastro e Gestão de Perfil
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../epicos_e_historias_de_usuarios/EP03_Diferencia%C3%A7%C3%A3o_de_Pap%C3%A9is/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Diferenciação de Papéis
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../epicos_e_historias_de_usuarios/EP04_Captacao_de_interesse_alunos/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Captação de Interesse Aluno
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../epicos_e_historias_de_usuarios/EP05_Inteligencia_e_validacao/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Inteligência de validação
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../epicos_e_historias_de_usuarios/EP06_Planejamento_e_Coordena%C3%A7%C3%A3o%20Acad%C3%AAmica/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Planejamento e Coordenação Acadêmica
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../epicos_e_historias_de_usuarios/EP07_Analise_e_Monitoramento_das_Pre-Matriculas/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Análise e Monitoramento das Pré-Matrículas
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../epicos_e_historias_de_usuarios/EP08_Acompanhamento_de_Turmas_e_Demanda_Academica/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Acompanhamento de Turmas e Demanda Acadêmica
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Slides/slides/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Slides do projeto Sistema de inteção de matrícula
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Histórico
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Histórico
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Historico/historico/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Divisão de Tarefas da Equipe
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Modelos
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Modelos
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Modelos/modelo_conceitual/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Modelo Conceitual
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Modelos/modelo_fisico/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Modelo Físico
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Índice">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Índice
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#acesso-e-perfil" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Acesso e Perfil
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Acesso e Perfil">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#rf01" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        RF01
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rf02" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        RF02
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rf03" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        RF03
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rf04" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        RF04
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rf05" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        RF05
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rf06" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        RF06
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rf07" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        RF07
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rf08" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        RF08
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#captacao-de-interesse-aluno" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Captação de Interesse - Aluno
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Captação de Interesse - Aluno">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#rf09" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        RF09
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rf10" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        RF10
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rf11" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        RF11
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rf12" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        RF12
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rf13" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        RF13
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rf14" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        RF14
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rf15" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        RF15
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rf16" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        RF16
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rf17" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        RF17
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#inteligencia-e-validacao" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Inteligência e Validação
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Inteligência e Validação">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#rf18" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        RF18
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rf19" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        RF19
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rf20" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        RF20
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rf21" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        RF21
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rf22" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        RF22
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rf23" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        RF23
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rf24" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        RF24
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rf25" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        RF25
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rf26" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        RF26
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rf27" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        RF27
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#analise-e-monitoramento" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Análise e Monitoramento
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Análise e Monitoramento">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#rf28" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        RF28
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rf29" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        RF29
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rf30" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        RF30
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rf31" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        RF31
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rf32" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        RF32
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rf33" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        RF33
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rf34" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        RF34
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rf35" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        RF35
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rf36" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        RF36
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rf37" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        RF37
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rf38" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        RF38
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#metricas-e-relatorios-visuais" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Métricas e Relatórios Visuais
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Métricas e Relatórios Visuais">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#rf39" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        RF39
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rf40" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        RF40
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rf41" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        RF41
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rf42" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        RF42
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rf43" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        RF43
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#acompanhamento-de-turmas-e-demanda-academica" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Acompanhamento de Turmas e Demanda Acadêmica
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Acompanhamento de Turmas e Demanda Acadêmica">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#rf44" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        RF44
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rf45" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        RF45
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rf46" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        RF46
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rf47" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        RF47
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rf48" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        RF48
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="requisitos-funcionais">Requisitos Funcionais</h1>
+<hr />
+<h2 id="acesso-e-perfil">Acesso e Perfil</h2>
+<h3 id="rf01">RF01</h3>
+<p>O sistema deve conter login com e-mail e senha</p>
+<h3 id="rf02">RF02</h3>
+<p>O sistema deve conter cadastro com nome, curso e área de interesse</p>
+<h3 id="rf03">RF03</h3>
+<p>O sistema deve conter autenticação de dois fatores (2FA)</p>
+<h3 id="rf04">RF04</h3>
+<p>O sistema deve conter recuperação de senha por e-mail</p>
+<h3 id="rf05">RF05</h3>
+<p>O sistema deve conter diferenciação de perfil (Aluno/Prof./Coord.)</p>
+<h3 id="rf06">RF06</h3>
+<p>O sistema deve permitir edição de dados do perfil</p>
+<h3 id="rf07">RF07</h3>
+<p>O sistema deve permitir Gerenciamento de papéis pelo coordenador</p>
+<h3 id="rf08">RF08</h3>
+<p>O sistema deve ter um rate limite por tentativas de login inválidos</p>
+<h2 id="captacao-de-interesse-aluno">Captação de Interesse - Aluno</h2>
+<h3 id="rf09">RF09</h3>
+<p>O sistema deve permitir visualizar disciplinas disponíveis.</p>
+<h3 id="rf10">RF10</h3>
+<p>O sistema deve permitir buscar disciplinas por nome ou código.</p>
+<h3 id="rf11">RF11</h3>
+<p>O sistema deve permitir selecionar disciplinas de interesse.</p>
+<h3 id="rf12">RF12</h3>
+<p>O sistema deve permitir escolher turmas dentre as disponíveis.</p>
+<h3 id="rf13">RF13</h3>
+<p>O sistema deve permitir remover disciplinas selecionadas.</p>
+<h3 id="rf14">RF14</h3>
+<p>O sistema deve funcionar no modo offline.</p>
+<h3 id="rf15">RF15</h3>
+<p>O sistema deve sincronizar os dados ao restabelecer conexão com a internet.</p>
+<h3 id="rf16">RF16</h3>
+<p>O sistema deve permitir confirmar a pré-matrícula.</p>
+<h3 id="rf17">RF17</h3>
+<p>O sistema deve armazenar as escolhas realizadas pelo aluno.</p>
+<h2 id="inteligencia-e-validacao">Inteligência e Validação</h2>
+<h3 id="rf18">RF18</h3>
+<p>O sistema deve permitir filtrar disciplinas por curso.</p>
+<h3 id="rf19">RF19</h3>
+<p>O sistema deve permitir filtrar disciplinas por turno.</p>
+<h3 id="rf20">RF20</h3>
+<p>O sistema deve permitir alterar disciplinas selecionadas.</p>
+<h3 id="rf21">RF21</h3>
+<p>O sistema deve permitir remover disciplinas da pré-matrícula.</p>
+<h3 id="rf22">RF22</h3>
+<p>O sistema deve permitir registrar justificativa na funcionalidade “Perdi o Interesse”.</p>
+<h3 id="rf23">RF23</h3>
+<p>O sistema deve limitar o período de coleta para 10 dias.</p>
+<h3 id="rf24">RF24</h3>
+<p>O sistema deve bloquear alterações após o encerramento do período.</p>
+<h3 id="rf25">RF25</h3>
+<p>O sistema deve atualizar os dados em tempo real.</p>
+<h3 id="rf26">RF26</h3>
+<p>O sistema deve atualizar automaticamente relatórios e métricas.</p>
+<h3 id="rf27">RF27</h3>
+<p>O sistema deve impedir duplicidade de registros.</p>
+<h2 id="analise-e-monitoramento">Análise e Monitoramento</h2>
+<h3 id="rf28">RF28</h3>
+<p>O sistema deve permitir que o coordenador visualize a quantidade de alunos que solicitaram vaga em cada turma.</p>
+<h3 id="rf29">RF29</h3>
+<p>O sistema deve exibir nome, código e identificação da turma.</p>
+<h3 id="rf30">RF30</h3>
+<p>O sistema deve comparar a quantidade de solicitações com o número de vagas disponíveis da turma.</p>
+<h3 id="rf31">RF31</h3>
+<p>O sistema deve emitir alertas quando a demanda ultrapassar o número de vagas.</p>
+<h3 id="rf32">RF32</h3>
+<p>O sistema deve apresentar indicadores relacionados ao perfil da demanda dos alunos.</p>
+<h3 id="rf33">RF33</h3>
+<p>O sistema deve apresentar o percentual de disciplinas concluídas pelos alunos.</p>
+<h3 id="rf34">RF34</h3>
+<p>O sistema deve diferenciar alunos de acordo com a quantidade de reprovações.</p>
+<h3 id="rf35">RF35</h3>
+<p>O sistema deve apresentar indicadores de demanda por turno.</p>
+<h3 id="rf36">RF36</h3>
+<p>O sistema deve permitir que coordenadores criem novas turmas.</p>
+<h3 id="rf37">RF37</h3>
+<p>O sistema deve permitir alterar informações da turma, como nome, código e horário.</p>
+<h3 id="rf38">RF38</h3>
+<p>O sistema deve permitir excluir turmas sem alunos vinculados.</p>
+<h2 id="metricas-e-relatorios-visuais">Métricas e Relatórios Visuais</h2>
+<h3 id="rf39">RF39</h3>
+<p>O sistema deve permitir visualizar disciplinas disponíveis.</p>
+<h3 id="rf40">RF40</h3>
+<p>O sistema deve gerar rankings das disciplinas mais procuradas.</p>
+<h3 id="rf41">RF41</h3>
+<p>O sistema deve exibir gráficos estatísticos relacionados às pré-matrículas.</p>
+<h3 id="rf42">RF42</h3>
+<p>O sistema deve permitir filtrar relatórios por curso e semestre.</p>
+<h3 id="rf43">RF43</h3>
+<p>O sistema deve atualizar métricas automaticamente após novas pré-matrículas.</p>
+<h2 id="acompanhamento-de-turmas-e-demanda-academica">Acompanhamento de Turmas e Demanda Acadêmica</h2>
+<h3 id="rf44">RF44</h3>
+<p>O sistema deve permitir ao professor visualizar suas turmas vinculadas.</p>
+<h3 id="rf45">RF45</h3>
+<p>O sistema deve exibir nome, código, identificação, horário e turno das turmas.</p>
+<h3 id="rf46">RF46</h3>
+<p>O sistema deve permitir ao professor visualizar a quantidade de alunos interessados por turma.</p>
+<h3 id="rf47">RF47</h3>
+<p>O sistema deve apresentar indicadores acadêmicos relacionados às turmas ministradas.</p>
+<h3 id="rf48">RF48</h3>
+<p>O sistema deve atualizar automaticamente as informações após novas intenções de matrícula.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": [], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copiado para \u00e1rea de transfer\u00eancia", "clipboard.copy": "Copiar para \u00e1rea de transfer\u00eancia", "search.result.more.one": "mais 1 nesta p\u00e1gina", "search.result.more.other": "# mais nesta p\u00e1gina", "search.result.none": "Nenhum documento encontrado", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.placeholder": "Digite para iniciar a busca", "search.result.term.missing": "Ausente", "select.version": "Selecione a vers\u00e3o"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+    
+  </body>
+</html>
